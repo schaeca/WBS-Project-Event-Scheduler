@@ -18,7 +18,7 @@ export default function EventDetails() {
         const data = await res.json();
         setEvent(data);
       } catch (e) {
-        setError('Failed to fetch Pokémon.');
+        setError('Failed to fetch Event.');
         console.error(e)
       } finally {
         setLoading(false);
