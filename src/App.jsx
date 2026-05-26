@@ -16,7 +16,7 @@ function App() {
       <div className="container mx-auto mt-4 min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/events" element={<EventDetails />} />
+          <Route path="/events/:id" element={<EventDetails />} />
           <Route path="/createevent" element={<CreateEvent />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />

@@ -11,7 +11,6 @@ export default function Navbar() {
         <p className="text-slate-200 font-bold">Carina's Event Scheduler</p>
         <ul className="flex flex-col gap-3 md:flex-row">
             <li><NavLink to="/" className={({isActive}) => isActive ? activeBtn : inactiveBtn} >Home</NavLink></li>
-            <li><NavLink to="/events" className={({isActive}) => isActive ? activeBtn : inactiveBtn} >View Events</NavLink></li>
             <li><NavLink to="/createevent" className={({isActive}) => isActive ? activeBtn : inactiveBtn} >Create Event</NavLink></li>
             <li><NavLink to="/signin" className={({isActive}) => isActive ? activeBtn : inactiveBtn} >Sign In</NavLink></li>
             <li><NavLink to="/signup" className={({isActive}) => isActive ? activeBtn : inactiveBtn} >Sign Up</NavLink></li>
