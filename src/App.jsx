@@ -3,9 +3,9 @@ import Navbar from "./layouts/Navbar";
 import Home from "./pages/Home";
 import Footer from "./layouts/Footer";
 import EventDetails from "./pages/EventDetails";
-import CreateEvent from "./pages/CreateEvent";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import ProtectedLayout from "./layouts/ProtectedLayout";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events/:id" element={<EventDetails />} />
-          <Route path="/createevent" element={<CreateEvent />} />
+          <Route path="/createevent" element={<ProtectedLayout />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
