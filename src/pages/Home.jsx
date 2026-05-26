@@ -16,7 +16,7 @@ export default function Home() {
         const data = await res.json();
         setEvents(data.results);
       } catch (e) {
-        setError('Failed to fetch Pokémon.');
+        setError('Failed to fetch Events.');
         console.error(e)
       } finally {
         setLoading(false);
